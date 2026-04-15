@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo de DevOps y Cloud</title>
+    <meta
+      name="description"
+      content="Una demo estática mínima para flujos de CI/CD con Azure DevOps, Terraform y Azure."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container hero__content">
+        <p class="eyebrow">Sitio de demo técnica</p>
+        <h1>Demo de DevOps y Cloud</h1>
+        <p class="hero__subtitle">Azure DevOps + Terraform + Azure</p>
+        <p class="hero__text">
+          Una landing técnica mínima pensada para mostrar pipelines de CI/CD,
+          infraestructura como código y despliegue automatizado en Azure.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h2>Qué muestra esta demo</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Pipelines de CI/CD en Azure DevOps</h3>
+              <p>Entrega guiada por pipeline para build, validación y release.</p>
+            </article>
+            <article class="card">
+              <h3>Infraestructura como código con Terraform</h3>
+              <p>Provisionamiento declarativo para entornos consistentes y repetibles.</p>
+            </article>
+            <article class="card">
+              <h3>Despliegue automatizado en Azure</h3>
+              <p>Despliegue de infraestructura y aplicación alineado con Azure.</p>
+            </article>
+            <article class="card">
+              <h3>Promoción de entornos con validación</h3>
+              <p>Progresión estructurada entre entornos con controles de release.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container">
+          <h2>Metadatos del despliegue</h2>
+          <div class="metadata">
+            <div class="metadata__item">
+              <span class="metadata__label">Environment</span>
+              <span class="metadata__value">{{ENVIRONMENT}}</span>
+            </div>
+            <div class="metadata__item">
+              <span class="metadata__label">Version</span>
+              <span class="metadata__value">{{VERSION}}</span>
+            </div>
+            <div class="metadata__item">
+              <span class="metadata__label">Build ID</span>
+              <span class="metadata__value">{{BUILD_ID}}</span>
+            </div>
+            <div class="metadata__item">
+              <span class="metadata__label">Last Deploy</span>
+              <span class="metadata__value">{{DEPLOY_DATE}}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <span>Provisionado con Terraform</span>
+        <span>Liberado por Azure DevOps Pipelines</span>
+      </div>
+    </footer>
+  </body>
+</html>
